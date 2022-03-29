@@ -1,0 +1,157 @@
+/*comando para importar fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+
+
+/*aqui é o comando para resetar as pré difinicoes do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size:100%; /*reset no body, font em 100% sem predifinicoes do css*/
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+
+} 
+
+.cabecalho {
+    /*comando do flexBox ele que alinha itens na tela*/
+    display:flex;/*ativa o flexbox*/
+    flex-direction: row; /*flex em linha*/
+    align-items: center; /*alinhando os itens do cabeçalho*/
+    justify-content: space-around; /*itens do cabecalho espacados na tela, o around deixa um pouco distante das margens laterais*/
+    padding: 20px; /*aumentando o paading do cabeçalho*/
+    flex-wrap: wrap; /*quebra quando um flexbox encosta na outra*/
+
+}
+
+.cabecalho-imagem {
+    padding: 20px;
+}
+
+
+.cabecalho-menu {
+    padding-top: 20px;
+    display:flex;
+    gap:32px; /*flexbox colocando gap entre os itens do menu*/
+}
+
+.cabecalho-menu-item {
+    font-family:'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400; /*peso da fonte, quanto maior, mais em negrito ela fica*/
+    font-size:18px;     
+}
+
+.conteudo {
+    border-top: 0.4px solid #FFF2E7; /*linha horizonta dividindo os conteudos*/
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.conteudo-principal-escrito {
+    display:flex;
+    flex-direction: column; /*flexbox em colunas*/
+    flex:wrap;
+    gap: 32px;
+    flex-wrap: wrap;
+    
+   }
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#FFF2E7;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.botao {
+    background-color: #ecd6c4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2f2325;
+    margin-left: 24px;
+
+}
+
+.botao:hover {/*subcalsse hover, quando o mouse passar em cima, vai aconter o que esta nessa classe*/
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.imagem-ballebot {
+    
+    flex-wrap: wrap;
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px; /*aumenta a expessura da margem, para distanciar itens*/
+    
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px; /*aumenta a expessuda da distancia entre o conteudo e o item*/
+    font-family: "righteous" cursive;
+    font-weight: 400;
+    font-size: 24p;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+
+
+}
+
+.conteudo-secundario-paragrago {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ecd6c4;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.rodape {
+    padding: 3px;
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px; 
+}
+
+.rodape-imagem {
+    height:48px;
+    display:block; /*para centralizar apenas um intem nao tem como usar a felxbox pq ela usa varios itens, transformamos em bloco e zeramos a argem automatica abaixo*/
+    margin: 0 auto;
+}
