@@ -59,10 +59,7 @@ body {
 .conteudo-principal-escrito {
     display:flex;
     flex-direction: column; 
-    flex:wrap;
-    gap: 32px;
-    flex-wrap: wrap;
-    
+    gap: 32px;    
    }
 
 .conteudo-principal-escrito-titulo {
@@ -70,7 +67,6 @@ body {
     font-weight: 400;
     font-size: 64px;
     color:#FFF2E7;
-    flex-wrap: wrap;
     padding: 24px;
 }
 
@@ -79,7 +75,6 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #FFF2E7;
-    flex-wrap: wrap;
     padding-left: 24px;
     padding-right: 24px;
 }
